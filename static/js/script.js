@@ -27,6 +27,12 @@ document.addEventListener('DOMContentLoaded', function () {
                   console.log(json)
                   document.getElementById('agedata').innerHTML = json.age;
                   document.getElementById('alignmentdata').innerHTML = json.alignment;
+                  document.getElementById('str-data').innerHTML = '+' + json.ability_bonuses[0];
+                  document.getElementById('dex-data').innerHTML = '+' + json.ability_bonuses[1];
+                  document.getElementById('con-data').innerHTML = '+' + json.ability_bonuses[2];
+                  document.getElementById('int-data').innerHTML = '+' + json.ability_bonuses[3];
+                  document.getElementById('wis-data').innerHTML = '+' + json.ability_bonuses[4];
+                  document.getElementById('cha-data').innerHTML = '+' + json.ability_bonuses[5];
               }
           }
       }
