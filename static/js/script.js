@@ -19,13 +19,14 @@ document.addEventListener('DOMContentLoaded', function () {
       // server response handler
       xhr.onreadystatechange = function () {
           if (xhr.readyState < 4)
-              document.getElementById('metadata').innerHTML = "Loading...";
+              document.getElementById('agedata').innerHTML = "Loading...";
           else if (xhr.readyState === 4) {
               if (xhr.status == 200 && xhr.status < 300)
               {
                   var json = JSON.parse(xhr.responseText);
                   console.log(json)
-                  document.getElementById('metadata').innerHTML = json.age;
+                  document.getElementById('agedata').innerHTML = json.age;
+                  document.getElementById('alignmentdata').innerHTML = json.alignment;
               }
           }
       }

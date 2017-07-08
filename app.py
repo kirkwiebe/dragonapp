@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Welcome to Python Flask!"
+    return "Please navigate to /index"
 
 @app.route("/index")
 def index():

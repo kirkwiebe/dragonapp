@@ -73,4 +73,6 @@ Add additional notes about how to deploy this on a live system
 
 ## Acknowledgments
 
-* Hat tip to **Adrian Padua** and his [D&D 5E API](http://www.dnd5eapi.co/) 
+* Big Hat tip to **Adrian Padua** and his [D&D 5E API](http://www.dnd5eapi.co/)
+* [Purplebooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) for their README template
+* [Ajax Tutor](http://www.ajax-tutor.com/) for their brilliant Ajax guide.
