@@ -26,38 +26,86 @@
         <div class="col-sm-8"><p>DragonApp utilizes the API from www.dnd5eapi.co/ and presents the information in an easy-to-consume format. This is also a project for an engineering apprenticeship. The project requires a single-page webapp that pulls data from a web service (or services), renders some kind of visualization of the data, and allows for at least one point of interaction with the data. </p></div>
         <div class="col-sm-2"></div>
       </div>
-      <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-4"><button type="button" class="btn btn-primary btn-block" onclick="document.getElementById('metadata').style.display='block'">Dwarf</button></div>
-        <div class="col-sm-4"><button type="button" class="btn btn-primary btn-block" onclick="document.getElementById('metadata').style.display='block'">Elf</button></div>
-        <div class="col-sm-2"></div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12"></div>
-      </div>
-      <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-4"><button type="button" class="btn btn-primary btn-block" onclick="document.getElementById('metadata').style.display='block'">Halfling</button></div>
-        <div class="col-sm-4"><button type="button" class="btn btn-primary btn-block" onclick="document.getElementById('metadata').style.display='block'">Human</button></div>
-        <div class="col-sm-2"></div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12"></div>
-      </div>
-      <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8 well" id="metadata" style="display:none"><p>Race information goes here.</p></div>
-        <div class="col-sm-2"></div>
-      </div>
-      <footer>
+      <form>
         <div class="row">
-          <div class="col-sm-5"></div>
-          <div class="col-sm-2"><p class="text-center">&copy; Kirk Wiebe 2017</p></div>
-          <div class="col-sm-5"></div>
+          <div class="col-sm-2"></div>
+          <div class="col-sm-4"><input type="button" class="btn btn-primary btn-block" id="1" value="Dwarf" onclick="document.getElementById('metadata').style.display='block'"></div>
+          <div class="col-sm-4"><input type="button" class="btn btn-primary btn-block" id="2" value="Elf" onclick="document.getElementById('metadata').style.display='block'"></div>
+          <div class="col-sm-2"></div>
         </div>
-      </footer>
+        <div class="row">
+          <div class="col-sm-12"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-4"><input type="button" class="btn btn-primary btn-block" id="3" value="Halfling" onclick="document.getElementById('metadata').style.display='block'"></div>
+          <div class="col-sm-4"><input type="button" class="btn btn-primary btn-block" id="4" value="Human" onclick="document.getElementById('metadata').style.display='block'"></div>
+          <div class="col-sm-2"></div>
+        </div>
+      </form>
+      <div id="metadata" style="display:none">
+        <div class="row">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4" class="text-center">
+            <h2>Ability Score Bonuses</h2>
+          </div>
+          <div class="col-sm-4"></div>
+        </div>
+        <div class="row"></div>
+          <div class="col-sm-3"></div>
+          <div class="col-sm-1" class="text-center">
+            <h3>STR</h3>
+            <div id="str-data"></div>
+          </div>
+          <div class="col-sm-1" class="text-center">
+            <h3>DEX</h3>
+            <div id="dex-data"></div>
+          </div>
+          <div class="col-sm-1" class="text-center">
+            <h3>CON</h3>
+            <div id="con-data"></div>
+          </div>
+          <div class="col-sm-1" class="text-center">
+            <h3>INT</h3>
+            <div id="int-data"></div>
+          </div>
+          <div class="col-sm-1" class="text-center">
+            <h3>WIS</h3>
+            <div id="wis-data"></div>
+          </div>
+          <div class="col-sm-1" class="text-center">
+            <h3>CHA</h3>
+            <div id="cha-data"></div>
+          </div>
+          <div class="col-sm-3"></div>
+        <div class="row">
+          <div class="col-sm-12"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8 well" id="age">
+            <h2>Age</h2>
+            <div class="data" id="agedata"></div>
+          </div>
+          <div class="col-sm-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8 well" id="alignment">
+            <h2>Alignment</h2>
+            <div class="data" id="alignmentdata"></div>
+          </div>
+          <div class="col-sm-2"></div>
+      </div>
     </div>
-
-
+    <footer>
+      <div class="row">
+        <div class="col-sm-5"></div>
+        <div class="col-sm-2"><p class="text-center">&copy; Kirk Wiebe 2017</p></div>
+        <div class="col-sm-5"></div>
+      </div>
+    </footer>
+    </div>
+    <script src="../static/js/script.js"></script>
   </body>
 </html>
