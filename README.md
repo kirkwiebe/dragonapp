@@ -63,18 +63,14 @@ Add additional notes about how to deploy this on a live system
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Kirk Wiebe**
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+* This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-The data content is provided by Wizards of the Coast through the Open Gaming License - see the [OGL.md](OGL.md) file for details
+* The data content is provided by Wizards of the Coast through the Open Gaming License - see the [OGL.md](OGL.md) file for details
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* Hat tip to **Adrian Padua** and his [D&D 5E API](http://www.dnd5eapi.co/) 
