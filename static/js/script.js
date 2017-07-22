@@ -1,10 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-
-  document.getElementById('1').addEventListener('click', getData);
-  document.getElementById('2').addEventListener('click', getData);
-  document.getElementById('3').addEventListener('click', getData);
-  document.getElementById('4').addEventListener('click', getData);
-
+  for (i = 1; i < 5; i++)
+  {
+    document.getElementById(i).addEventListener('click', getData);
+  }
   function getData() {
       // Instantiate XHR
       var url = 'http://www.dnd5eapi.co/api/races/' + this.id;
@@ -25,14 +23,13 @@ document.addEventListener('DOMContentLoaded', function () {
               {
                   var json = JSON.parse(xhr.responseText);
                   console.log(json)
+                  var bonuses = json.ability_bonuses;
                   document.getElementById('agedata').innerHTML = json.age;
                   document.getElementById('alignmentdata').innerHTML = json.alignment;
-                  document.getElementById('str-data').innerHTML = '+' + json.ability_bonuses[0];
-                  document.getElementById('dex-data').innerHTML = '+' + json.ability_bonuses[1];
-                  document.getElementById('con-data').innerHTML = '+' + json.ability_bonuses[2];
-                  document.getElementById('int-data').innerHTML = '+' + json.ability_bonuses[3];
-                  document.getElementById('wis-data').innerHTML = '+' + json.ability_bonuses[4];
-                  document.getElementById('cha-data').innerHTML = '+' + json.ability_bonuses[5];
+                  for (i = 0; i < bonuses.length; i++)
+                  {
+                    document.getElementById('data.' + i).innerHTML = '+' + bonuses[i];
+                  }
               }
           }
       }
