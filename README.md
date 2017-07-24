@@ -8,53 +8,36 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+You'll need Python and Flask.
 
+Install Flask:
 ```
-Give examples
+sudo pip3 install flask
 ```
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+Grab the files from this repo for your local machine.
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+Open your Terminal and navigate to the proper directory with the files.
 
 ```
-until finished
+$ cd Documents/GitHub/dragonapp
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+Run the app
 
 ```
-Give an example
+$ python app.py
 ```
 
-### And coding style tests
+Open your browser and head to http://127.0.0.1:5000/index.
 
-Explain what these tests test and why
+Enjoy!
 
-```
-Give an example
-```
+## Future Ideas
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+With more time, I would add a separate tab for each piece of race data. From there, I would add functionality to get Ability Score descriptions and racial trait descriptions. Going forward, I would add similar functionality for classes and spells.
 
 ## Built With
 
