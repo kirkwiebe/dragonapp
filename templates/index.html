@@ -11,11 +11,7 @@
   </head>
   <body>
     <div class="container-fluid">
-      <!-- The Bootstrap grid system has four classes:
-              xs (for phones)
-              sm (for tablets)
-              md (for desktops)
-              lg (for larger desktops)-->
+      <!-- Title and instructions -->
       <div class="row">
         <div class="col-sm-2"></div>
         <div class="col-sm-8"><h2 class="text-center">Welcome to DragonApp!</h2></div>
@@ -26,23 +22,23 @@
         <div class="col-sm-8"><p>DragonApp utilizes the API from www.dnd5eapi.co/ and presents the information in an easy-to-consume format. This is also a project for an engineering apprenticeship. The project requires a single-page webapp that pulls data from a web service (or services), renders some kind of visualization of the data, and allows for at least one point of interaction with the data. </p></div>
         <div class="col-sm-2"></div>
       </div>
-      <form>
-        <div class="row">
-          <div class="col-sm-2"></div>
-          <div class="col-sm-4"><input type="button" class="btn btn-primary btn-block" id="1" value="Dwarf" onclick="document.getElementById('metadata').style.display='block'"></div>
-          <div class="col-sm-4"><input type="button" class="btn btn-primary btn-block" id="2" value="Elf" onclick="document.getElementById('metadata').style.display='block'"></div>
-          <div class="col-sm-2"></div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12"></div>
-        </div>
-        <div class="row">
-          <div class="col-sm-2"></div>
-          <div class="col-sm-4"><input type="button" class="btn btn-primary btn-block" id="3" value="Halfling" onclick="document.getElementById('metadata').style.display='block'"></div>
-          <div class="col-sm-4"><input type="button" class="btn btn-primary btn-block" id="4" value="Human" onclick="document.getElementById('metadata').style.display='block'"></div>
-          <div class="col-sm-2"></div>
-        </div>
-      </form>
+      <!-- Race selectors -->
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4"><input type="button" class="btn btn-primary btn-block" id="1" value="Dwarf" onclick="document.getElementById('metadata').style.display='block'"></div>
+        <div class="col-sm-4"><input type="button" class="btn btn-primary btn-block" id="2" value="Elf" onclick="document.getElementById('metadata').style.display='block'"></div>
+        <div class="col-sm-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4"><input type="button" class="btn btn-primary btn-block" id="3" value="Halfling" onclick="document.getElementById('metadata').style.display='block'"></div>
+        <div class="col-sm-4"><input type="button" class="btn btn-primary btn-block" id="4" value="Human" onclick="document.getElementById('metadata').style.display='block'"></div>
+        <div class="col-sm-2"></div>
+      </div>
+      <!-- Race Metadata -->
       <div id="metadata" style="display:none">
         <div class="row">
           <div class="col-sm-4"></div>
@@ -53,52 +49,58 @@
         </div>
         <div class="row"></div>
           <div class="col-sm-3"></div>
-          <div class="col-sm-1" class="text-center">
+          <!-- Strength Bonus -->
+          <div class="col-sm-1">
             <div class="panel panel-default">
-              <div class="panel-heading">
+              <div class="panel-heading text-center">
                 <h3 class="panel-title">STR</h3>
               </div>
-              <div class="panel-body" id="data.0"></div>
+              <div class="panel-body text-center" id="data.0"></div>
             </div>
           </div>
-          <div class="col-sm-1" class="text-center">
+          <!-- Dexterity Bonus -->
+          <div class="col-sm-1">
             <div class="panel panel-default">
-              <div class="panel-heading">
+              <div class="panel-heading text-center">
                 <h3 class="panel-title">DEX</h3>
               </div>
-              <div class="panel-body" id="data.1"></div>
+              <div class="panel-body text-center" id="data.1"></div>
             </div>
           </div>
-          <div class="col-sm-1" class="text-center">
+          <!-- Constitution Bonus -->
+          <div class="col-sm-1">
             <div class="panel panel-default">
-              <div class="panel-heading">
+              <div class="panel-heading text-center">
                 <h3 class="panel-title">CON</h3>
               </div>
-              <div class="panel-body" id="data.2"></div>
+              <div class="panel-body text-center" id="data.2"></div>
             </div>
           </div>
-          <div class="col-sm-1" class="text-center">
+          <!-- Intelligence Bonus -->
+          <div class="col-sm-1">
             <div class="panel panel-default">
-              <div class="panel-heading">
+              <div class="panel-heading text-center">
                 <h3 class="panel-title">INT</h3>
               </div>
-              <div class="panel-body" id="data.3"></div>
+              <div class="panel-body text-center" id="data.3"></div>
             </div>
           </div>
-          <div class="col-sm-1" class="text-center">
+          <!-- Wisdom Bonus -->
+          <div class="col-sm-1">
             <div class="panel panel-default">
-              <div class="panel-heading">
+              <div class="panel-heading text-center">
                 <h3 class="panel-title">WIS</h3>
               </div>
-              <div class="panel-body" id="data.4"></div>
+              <div class="panel-body text-center" id="data.4"></div>
             </div>
           </div>
-          <div class="col-sm-1" class="text-center">
+          <!-- Charisma Bonus -->
+          <div class="col-sm-1">
             <div class="panel panel-default">
-              <div class="panel-heading">
+              <div class="panel-heading text-center">
                 <h3 class="panel-title">CHA</h3>
               </div>
-              <div class="panel-body" id="data.5"></div>
+              <div class="panel-body text-center" id="data.5"></div>
             </div>
           </div>
           <div class="col-sm-3"></div>
