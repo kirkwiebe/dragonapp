@@ -22,16 +22,15 @@ document.addEventListener('DOMContentLoaded', function () {
               if (xhr.status == 200 && xhr.status < 300)
               {
                   var json = JSON.parse(xhr.responseText);
-                  console.log(json)
                   var bonuses = json.ability_bonuses;
-                  document.getElementById('agedata').innerHTML = json.age;
-                  document.getElementById('alignmentdata').innerHTML = json.alignment;
-                  document.getElementById('sizetitle').innerHTML = 'Size: ' + json.size;
-                  document.getElementById('sizedata').innerHTML = json.size_description;
                   for (i = 0; i < bonuses.length; i++)
                   {
                     document.getElementById('data.' + i).innerHTML = '+' + bonuses[i];
                   }
+                  document.getElementById('agedata').innerHTML = json.age;
+                  document.getElementById('alignmentdata').innerHTML = json.alignment;
+                  document.getElementById('sizetitle').innerHTML = 'Size: ' + json.size;
+                  document.getElementById('sizedata').innerHTML = json.size_description;
               }
           }
       }

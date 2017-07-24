@@ -40,6 +40,7 @@
       </div>
       <!-- Race Metadata -->
       <div id="metadata" style="display:none">
+        <!-- Old Race Metadata Start -->
         <div class="row">
           <div class="col-sm-4"></div>
           <div class="col-sm-4">
@@ -107,31 +108,56 @@
         <div class="row">
           <div class="col-sm-12"></div>
         </div>
+        <!-- Navigation Pills -->
         <div class="row">
-          <div class="col-sm-2"></div>
-          <div class="col-sm-8 well" id="age">
-            <h2>Age</h2>
-            <div class="data" id="agedata"></div>
+          <div class="col-sm-5"></div>
+          <div class="col-sm-4">
+            <ul class="nav nav-pills center text">
+              <li class="active"><a href="#tab_a" data-toggle="pill" id="tab_a_title">Age</a></li>
+              <li><a href="#tab_b" data-toggle="pill" id="tab_b_title">Alignment</a></li>
+              <li><a href="#tab_c" data-toggle="pill" id="tab_c_title">Size</a></li>
+            </ul>
           </div>
-          <div class="col-sm-2"></div>
+          <div class="col-sm-3"></div>
         </div>
-        <div class="row">
-          <div class="col-sm-2"></div>
-          <div class="col-sm-8 well" id="alignment">
-            <h2>Alignment</h2>
-            <div class="data" id="alignmentdata"></div>
+
+        <div class="tab-content">
+          <div class="tab-pane fade in active" id="tab_a">
+            <!-- Age well -->
+            <div class="row">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-8 well" id="age">
+                <h2>Age</h2>
+                <div class="data" id="agedata"></div>
+              </div>
+              <div class="col-sm-2"></div>
+            </div>
           </div>
-          <div class="col-sm-2"></div>
-      </div>
-      <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8 well" id="size">
-          <h2 id="sizetitle"></h2>
-          <div class="data" id="sizedata"></div>
+          <div class="tab-pane fade" id="tab_b">
+            <!-- Alignment well -->
+            <div class="row">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-8 well" id="alignment">
+                <h2>Alignment</h2>
+                <div class="data" id="alignmentdata"></div>
+              </div>
+              <div class="col-sm-2"></div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tab_c">
+            <!-- Size well -->
+            <div class="row">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-8 well" id="size">
+                <h2 id="sizetitle"></h2>
+                <div class="data" id="sizedata"></div>
+              </div>
+              <div class="col-sm-2"></div>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-2"></div>
     </div>
-    </div>
+    <!-- End of Race Metadata -->
     <footer>
       <div class="row">
         <div class="col-sm-5"></div>
